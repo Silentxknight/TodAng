@@ -1,6 +1,7 @@
-# TodoAppAng
+# Tod(todo) + Ang(angular) = TodAng
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.11.
+Simple Todo App with Angular
 
 ## Development server
 
