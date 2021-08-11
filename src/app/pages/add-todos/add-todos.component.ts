@@ -8,7 +8,7 @@ import { Todo } from 'src/app/Todos';
   styleUrls: ['./add-todos.component.css']
 })
 export class AddTodosComponent implements OnInit {
-  title!: string;
+  title: string ='';
   desc!: string;
   @Output() addTodo:EventEmitter<Todo>=new EventEmitter();
   constructor() { }
