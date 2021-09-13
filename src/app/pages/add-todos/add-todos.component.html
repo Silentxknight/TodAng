@@ -1,4 +1,4 @@
-<div class="my-3">
+<div class="my-3 add-todo">
     <h4>Add a Todo</h4>
     <form (ngSubmit)="onPost()">
         <div class="form-group">
@@ -9,6 +9,7 @@
           <label for="desc">Todo Description</label>
           <input type="text" class="form-control" name="desc" id="desc" [(ngModel)]="desc">
         </div> 
+        <br>
         <button type="submit" class="btn btn-sm btn-primary">Add Todo</button>
       </form>
     </div>
