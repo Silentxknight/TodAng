@@ -8,6 +8,8 @@ import { TodoItemsComponent } from './pages/todo-items/todo-items.component';
 import { AddTodosComponent } from './pages/add-todos/add-todos.component';
 import { VersionDetailsComponent } from './others/version-details/version-details.component';
 import { FormBuilder, FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -15,15 +17,16 @@ import { FormBuilder, FormsModule } from '@angular/forms';
     TodosComponent,
     TodoItemsComponent,
     AddTodosComponent,
-    VersionDetailsComponent
+    VersionDetailsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    
-    FormsModule
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot(), // ToastrModule added
+    FormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
